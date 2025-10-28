@@ -24,6 +24,18 @@ header > div {
   display: inline-flex;
 }
 
+header a {
+  color: #e8eaed;
+  text-decoration: none;
+  font-size: 0.875rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
 form {
   display: flex;
   flex-direction: column;
