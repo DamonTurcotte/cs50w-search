@@ -3,6 +3,14 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 header {
   height: 60px;
   width: 100%;
@@ -17,6 +25,56 @@ a {
   color: rgba(0, 0, 0, .87);
   font-size: 14px;
   padding: 0 5px;
+}
+
+.main-header {
+  min-height: 92px;
+  height: calc(100% - 560px);
+  max-height: 290px;
+  align-content: flex-end;
+}
+
+.main-header h1 {
+  font-size: 48px;
+}
+
+#search {
+  display: flex;
+  z-index: 3;
+  position: relative;
+  min-height: 50px;
+  background: #fff;
+  border: 1px solid #dadce0;
+  box-shadow: 0px 3px 10px 0px rgba(31, 31, 31, 0.08);
+  border-radius: 26px;
+  margin: 12px auto;
+  width: 100%;
+  max-width: 688px;
+}
+
+input[type="submit"] {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 8px;
+  color: #3c4043;
+  font-family: Google Sans, Arial, sans-serif;
+  font-optical-sizing: none;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 11px 4px;
+  padding: 0 16px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+  }
 }
 
 /* Logo Styles */
