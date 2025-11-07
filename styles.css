@@ -38,6 +38,10 @@ a {
   font-size: 48px;
 }
 
+form {
+  width: 100%;
+}
+
 #search {
   display: flex;
   z-index: 3;
@@ -56,6 +60,11 @@ a {
 #search:focus {
   outline: none;
   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.search-buttons {
+  display: flex;
+  justify-content: center;
 }
 
 input[type="submit"] {
