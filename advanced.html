@@ -32,11 +32,61 @@
         <div class="adv-main">
           <form action="https://www.google.com/search">
 
-            <input type="text" name="as_q" class="adv-textinput" placeholder="All these words">
-            <input type="text" name="as_epq" class="adv-textinput" placeholder="This exact word or phrase">
-            <input type="text" name="as_oq" class="adv-textinput" placeholder="Any of these words">
-            <input type="text" name="as_eq" class="adv-textinput" placeholder="None of these words">
-            <input type="submit" value="Advanced Search">
+            <div>
+                <div class="adv-label">
+                    <span class="adv-label-header">Find pages with... </span>
+                </div>
+            </div>
+
+            <div>
+                <div class="adv-label">
+                    <label for="as_q">All these words:</label>
+                </div>
+                <input type="text" name="as_q" class="adv-textinput" placeholder="All these words">
+                <div class="adv-info">
+                    <span>
+                        Type important words separated by spaces. <br>
+                    </span>
+                </div>
+            </div>
+
+            <div>
+                <div class="adv-label">
+                    <label for="as_epq">This exact word or phrase:</label>
+                </div>
+                <input type="text" name="as_epq" class="adv-textinput" placeholder="This exact word or phrase">
+                <div class="adv-info">
+                    <span>
+                        Put exact words in quotes:  "rat terrier"
+                    </span>
+                </div>
+            </div>
+
+            <div>
+                <div class="adv-label">
+                    <label for="as_oq">Any of these words:</label>
+                </div>
+                <input type="text" name="as_oq" class="adv-textinput" placeholder="Any of these words">
+                <div class="adv-info">
+                    <span>
+                        Type words separated by spaces, e.g. "cat dog"
+                    </span>
+                </div>
+            </div>
+
+            <div>
+                <div class="adv-label">
+                    <label for="as_eq">None of these words:</label>
+                </div>
+                <input type="text" name="as_eq" class="adv-textinput" placeholder="None of these words">
+                <div class="adv-info">
+                    <span>
+                        Put a minus sign just before words you don't want:  -rodent, -"Jack Russell"
+                    </span>
+                </div>
+            </div>
+
+            <input type="submit" value="Advanced Search" id="adv-submit">
             
           </form>
         </div>
